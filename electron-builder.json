@@ -1,0 +1,30 @@
+{
+  "$schema": "https://raw.githubusercontent.com/electron-userland/electron-builder/master/packages/app-builder-lib/scheme.json",
+  "appId": "com.bot.editword",
+  "productName": "bot-edit-word",
+  "directories": {
+    "output": "release",
+    "buildResources": "build"
+  },
+  "files": [
+    "dist/**/*",
+    "electron/**/*",
+    "package.json"
+  ],
+  "mac": {
+    "target": ["dmg", "zip"],
+    "artifactName": "${productName}-${version}-mac.${ext}"
+  },
+  "win": {
+    "target": ["nsis"],
+    "artifactName": "${productName}-${version}-win.${ext}"
+  },
+  "linux": {
+    "target": ["AppImage", "deb"],
+    "artifactName": "${productName}-${version}-linux.${ext}"
+  },
+  "nsis": {
+    "oneClick": false,
+    "allowToChangeInstallationDirectory": true
+  }
+}
