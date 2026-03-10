@@ -8,11 +8,11 @@
   },
   "files": [
     "dist/**/*",
-    "electron/**/*",
+    "dist-electron/**/*",
     "package.json"
   ],
   "mac": {
-    "target": ["dmg", "zip"],
+    "target": ["zip"],
     "artifactName": "${productName}-${version}-mac.${ext}"
   },
   "win": {

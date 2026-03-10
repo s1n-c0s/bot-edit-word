@@ -2,8 +2,8 @@
   "name": "bot-edit-word",
   "version": "1.0.0",
   "description": "Word BetterExp Electron App Cross Platform",
+  "author": "Your Name",
   "main": "dist-electron/main.js",
-  "type": "module",
   "private": true,
   "scripts": {
     "dev": "concurrently \"bun run dev:vite\" \"bun run dev:electron\"",
